@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+//Navbar
+//let active = { isActive: true }; let { isActive } = active;
+//TODO https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
+//TODO https://stackoverflow.com/questions/41131450/active-link-with-react-router
+
+//Spinner
+//TODO https://react.dev/learn/passing-props-to-a-component

@@ -3,7 +3,6 @@ import { FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const JobListing = ({ job }) => {
-  //console.log(job);
   const [showDescription, setShowDescription] = useState(false);
 
   let description = job.description;
@@ -18,11 +17,11 @@ const JobListing = ({ job }) => {
           <div className="text-gray-600 my-2">{job.type}</div>
           <h3 className="text-xl font-bold">{job.title}</h3>
         </div>
-        <div className="mb-5">{description}</div>/
+        <div className="mb-5">{description}</div>
         <button
           onClick={() => {
-            //setShowDescription(!showDescription); ---value or function
-            setShowDescription(prevState => !prevState); //or function
+            //setShowDescription(!showDescription); ---value or function or function
+            setShowDescription(prevState => !prevState);
           }}
           className="text-indigo-500 mb-5 
         hover:text-indigo-600"
@@ -37,7 +36,7 @@ const JobListing = ({ job }) => {
             {job.location}
           </div>
           <Link
-            to={`/job/${job.id}`} //в строке меняем JS
+            to={`/job/${job.id}`}
             className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More

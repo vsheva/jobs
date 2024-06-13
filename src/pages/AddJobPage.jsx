@@ -18,7 +18,7 @@ const AddJobPage = ({ addJobSubmit }) => {
   const handleSubmitForm = e => {
     e.preventDefault();
 
-    //match API, but our structure
+    //matched API with our structure
     const newJob = {
       title,
       type,

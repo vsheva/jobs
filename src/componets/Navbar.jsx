@@ -2,13 +2,8 @@ import logo from '../assets/images/logo.png';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  //TODO https://learn.javascript.ru/destructuring-assignment#destrukturizatsiya-obekta
-  //TODO https://stackoverflow.com/questions/41131450/active-link-with-react-router
   //let active = { isActive: true }; let { isActive } = active;
-
   const linkClass = ({ isActive }) => {
-    //!console.log(isActive);
-
     return isActive
       ? 'text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
       : 'text-white  hover:bg-gray-900 hover:text-white rounded-md px-3 py-2';
@@ -27,11 +22,7 @@ const Navbar = () => {
                 <NavLink to="/" className={linkClass}>
                   Home
                 </NavLink>
-                <NavLink
-                  to="/jobs"
-                  //! style={state => console.log('state', state)} {isActive:true}
-                  className={linkClass}
-                >
+                <NavLink to="/jobs" className={linkClass}>
                   Jobs
                 </NavLink>
                 <NavLink to="/add-job" className={linkClass}>
@@ -47,3 +38,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

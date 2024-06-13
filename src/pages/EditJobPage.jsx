@@ -21,9 +21,9 @@ const EditJobPage = ({ updateJobSubmit }) => {
   const submitForm = e => {
     e.preventDefault();
 
-    //match API, but our structure
+    //matched structured API
     const updatedJob = {
-      id, //!
+      id, //
       title,
       type,
       location,

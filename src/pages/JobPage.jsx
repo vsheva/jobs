@@ -5,8 +5,7 @@ import { toast } from 'react-toastify';
 
 const JobPage = ({ deleteJb }) => {
   const job = useLoaderData();
-  //const { id } = useParams(); //console.log('id', id);
-  console.log('job', job);
+  //const { id } = useParams();
 
   const navigate = useNavigate();
 
@@ -15,7 +14,7 @@ const JobPage = ({ deleteJb }) => {
     if (!confirm) return;
 
     deleteJb(jobId);
-    toast.success('Job Deleted Successfully'); //!toast
+    toast.success('Job Deleted Successfully'); //toast
 
     navigate('/jobs');
   };
@@ -76,7 +75,6 @@ const JobPage = ({ deleteJb }) => {
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-xl font-bold mb-6">Manage Job</h3>
                 <Link
-                  //!  by job.id  //  href='/add-job.html'
                   to={`/edit-job/${job.id}`}
                   className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
@@ -101,7 +99,7 @@ const JobPage = ({ deleteJb }) => {
   //import Spinner from '../componets/Spinner';
   //import { useState, useEffect } from 'react';
 
-  // const { id } = useParams(); //!jobId
+  // const { id } = useParams(); //jobId
   //   const [job, setJob] = useState(null);
   //   const [loading, setLoading] = useState(true);
 
@@ -124,7 +122,6 @@ const JobPage = ({ deleteJb }) => {
 };
 
 const jobLoader = async ({ params }) => {
-  console.log('params', params);
   const res = await fetch(`/api/jobs/${params.id}`);
   const data = await res.json();
   return data;

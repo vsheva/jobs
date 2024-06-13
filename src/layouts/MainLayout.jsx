@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../componets/Navbar';
 
 const MainLayout = () => {
-  //return <div>MainLayout</div>;
   return (
     <>
       <Navbar />

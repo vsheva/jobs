@@ -1,6 +1,6 @@
 import ClipLoader from 'react-spinners/ClipLoader';
 
-//TODO https://react.dev/learn/passing-props-to-a-component
+
 
 const Spinner = ({ loading }) => {
 

@@ -5,7 +5,6 @@ import Spinner from './Spinner';
 
 const JobListings = ({ isHome = false }) => {
   //const listingJobs = isHome ? jobs.slice(0, 3) : jobs;
-
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 

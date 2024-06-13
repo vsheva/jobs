@@ -16,12 +16,3 @@ const HomePage = () => {
 
 export default HomePage;
 
-// (
-//     <>
-//       <Navbar />
-//       <Hero />
-//       <HomeCards />
-//       <JobListings />
-//       <ViewAllJobs />
-//     </>
-//   );
