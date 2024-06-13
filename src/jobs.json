@@ -97,6 +97,20 @@
         "contactEmail": "a@a.com",
         "contactPhone": "1234546758"
       }
+    },
+    {
+      "id": "6ab8",
+      "title": "a",
+      "type": "Part-Time",
+      "location": "a",
+      "description": "a",
+      "salary": "Under $50K",
+      "company": {
+        "name": "a",
+        "description": "a",
+        "contactEmail": "a@a.com",
+        "contactPhone": "11111111111"
+      }
     }
   ]
 }
