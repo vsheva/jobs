@@ -1,5 +1,4 @@
 # React + Vite
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://www.youtube.com/watch?v=qzYMBA2cbPY)
 
 [![Watch the video](<video src='https://www.youtube.com/watch?v=qzYMBA2cbPY' width=180/>)](https://www.youtube.com/watch?v=qzYMBA2cbPY)
 
